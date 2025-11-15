@@ -11,7 +11,7 @@ import (
 	"ariga.io/atlas/sql/mysql"
 	"ariga.io/atlas/sql/postgres"
 	"ariga.io/atlas/sql/schema"
-	"ariga.io/entimport/internal/mux"
+	"github.com/saurick/entimport/internal/mux"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

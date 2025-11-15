@@ -39,13 +39,13 @@ The command above will create `<project>/ent/schema/` directory and the file ins
 Installing and running `entimport`
 
 ```shell
-go run ariga.io/entimport/cmd/entimport
+go run github.com/saurick/entimport/cmd/entimport
 ```
 
 - For example, importing a MySQL schema with `users` table:
 
 ```shell
-go run ariga.io/entimport/cmd/entimport -dsn "mysql://root:pass@tcp(localhost:3308)/test" -tables "users"
+go run github.com/saurick/entimport/cmd/entimport -dsn "mysql://root:pass@tcp(localhost:3308)/test" -tables "users"
 ```
 
 The command above will write a valid ent schema into the directory specified (or the default `./ent/schema`):
@@ -99,13 +99,13 @@ Usage of ./entimport:
 > Note: add search_path=foo if you use non `public` schema.
 
 ```shell
-go run ariga.io/entimport/cmd/entimport -dsn "postgres://postgres:pass@localhost:5432/test?sslmode=disable" 
+go run github.com/saurick/entimport/cmd/entimport -dsn "postgres://postgres:pass@localhost:5432/test?sslmode=disable" 
 ```
 
 2. Import ent schema from MySQL database
 
 ```shell
-go run ariga.io/entimport/cmd/entimport -dsn "mysql://root:pass@tcp(localhost:3308)/test"
+go run github.com/saurick/entimport/cmd/entimport -dsn "mysql://root:pass@tcp(localhost:3308)/test"
 ```
 
 3. Import only specific tables:
@@ -116,13 +116,13 @@ go run ariga.io/entimport/cmd/entimport -dsn "mysql://root:pass@tcp(localhost:33
 > If the `-tables` flags is omitted all tables in current `database schema` will be imported
 
 ```shell
-go run ariga.io/entimport/cmd/entimport -dsn "..." -tables "users,user_friends" 
+go run github.com/saurick/entimport/cmd/entimport -dsn "..." -tables "users,user_friends" 
 ```
 
 4. Import to another directory:
 
 ```shell
-go run ariga.io/entimport/cmd/entimport -dsn "..." -schema-path "/some/path/here"
+go run github.com/saurick/entimport/cmd/entimport -dsn "..." -schema-path "/some/path/here"
 ```
 
 ## Future Work

@@ -10,7 +10,7 @@ import (
 
 	"ariga.io/atlas/sql/schema"
 
-	"ariga.io/entimport/internal/entimport"
+	"github.com/saurick/entimport/internal/entimport"
 
 	"entgo.io/ent/dialect"
 	"github.com/go-openapi/inflect"
