@@ -39,4 +39,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-// replace ariga.io/entimport => github.com/saurick/entimport
+replace github.com/saurick/entimport => github.com/saurick/entimport v0.0.0-20230523171249-3381ae96c490
